@@ -1,0 +1,149 @@
+<!--Pablo D. Ramos - Trabajo final curso Front-End-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum de Pablo Ramos</title>
+<!--Esta es para incluir la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+<!--Esta es para incluir un ícono-->     
+    <link rel="shortcut icon" href="img/logo1.png">
+
+</head>
+<body >
+
+    <!--Menú lateral-->
+    <section class="barra-lateral">
+
+        <div style="text-align: center;">
+            <img id="foto" src="img/Pablo CV.png" alt="Foto de Pablo Ramos" />
+        </div>
+
+        <div class="nav">
+            <p id="item1" class="item p-activo">detalles personales</p>
+            <p id="item2" class="item p-normal">habilidades</p>
+            <p id="item3" class="item p-normal">educación</p>
+            <p id="item4" class="item p-normal">experiencia laboral</p>
+            <p id="item5" class="item p-normal">cursos</p>
+            <p id="item6" class="item p-normal">pasantía</p>
+            <p id="item7" class="item p-normal">actividades extras</p>
+        </div>
+    </section>
+    
+    <!--Sección con información personal-->
+    <section class="superior">
+        <p class="nombre">Pablo Daniel Ramos</p>
+        <div style="text-align: center;">
+            <a class="correo" href="mailto:pdramos@gmail.com?Subject=Contacto">PDRamos@gmail.com</a></p>
+        </div>
+    </section>
+
+    <section class="superior">
+        <p class="fijo">
+    <span class="textofijo">Me gradué de <span class="negrita"> Técnico en Producción Editorial </span> en la Universidad Nacional de Entre Ríos y soy <br> <span class="negrita">
+        Fotógrafo Profesional</span> matriculado en la Asociación de Fotógrafos Profesionales de Entre Ríos. <br>
+        Por otro lado, tengo cursos acreditados de programación <span class="negrita">front-end</span> y en <span class="negrita">PHP</span> y <span class="negrita">Java</span>.
+    </span> 
+        </p>
+    </section>
+
+    <!--Secciones con información-->
+    <section class="info" id ="detalles" style="display:flex;"> 
+        <p>
+            Edad: <span class="negrita">45 años</span>
+            Nacionalidad: <span class="negrita">Argentino</span>
+            Estado civil: <span class="negrita">Casado</span>
+            DNI: <span class="negrita">26.761.700</span>
+            Celular y WhatsApp: <span class="negrita">+54 9 343 4163258</span>
+        </p>            
+    </section>
+
+    <section class="info" id ="habilidades" style="display:none;">
+        <p>
+            Responsable <span class="negrita">100%</span>
+            Servicial <span class="negrita">90%</span>
+            Liderazgo <span class="negrita">90%</span>
+            Comunicativo <span class="negrita">80%</span>  
+        </p>
+    </section>
+
+    <section class="info" id ="educacion" style="display:none;">
+        <p>
+            <span class="fecha">2020-2023</span>
+            <span class="negrita">Técnico en Producción Editorial</span>
+            Universidad Nacional de Entre Ríos, Paraná, Entre Ríos
+
+            <span class="fecha">1999-2003</span>
+            <span class="negrita">Técnico Superior en Programación</span> 
+            Universidad Tecnológica Nacional, Paraná, Entre Ríos
+            <span class="cursiva">Falta realizar tesis final</span>
+        </p>
+    </section>
+
+    <section class="info" id ="experiencia" style="display:none;">
+        <p>
+            <span class="fecha">2004-Presente</span>
+            <span class="negrita">Encargado de Depósito</span> 
+            OIC SA, Paraná, Entre Ríos
+            <span class="cursiva">Responsable del depósito de materiales</span> 
+
+            <span class="fecha">2000-2003</span> 
+            <span class="negrita">Técnico</span>
+            Centro Técnico, Paraná, Entre Ríos
+            <span class="cursiva">Programación, mantenimiento de harware y software</span>
+        </p>
+    </section>
+
+    <section class="info" id ="cursos" style="display:none;">
+        <p>
+            <span class="fecha">2020-2021</span>
+            <span class="negrita">Fotografía Profesional</span> 
+            Asociación de Fotógrafos Profesionales de Entre Ríos
+            <span class="cursiva">Fotógrafo Profesional Mat. 1084</span> 
+
+            <span class="fecha">2014</span>
+            <span class="negrita">Taller de Anécdotas Mejoradas</span> 
+            Editorial Orsai
+        </p>
+    </section>
+
+    <section class="info" id ="pasantia" style="display:none;">
+        <p>
+            <span class="fecha">2022-2023</span>
+            <span class="negrita">Revista Mi Lugar</span> 
+            Editorial Municipal de Paraná, Paraná, Entre Ríos
+            <span class="cursiva">Trabajos de redacción, corrección, maquetado y distribución del número de febrero 2023 de la revista Mi lugar, publicada por la Editorial Municipal de Paraná</span> 
+        </p>
+    </section>
+
+    <section class="info" id ="extra" style="display:none;">
+        <p>
+            <span class="fecha">2020-2022</span>
+            <span class="negrita">Dirección Editorial</span> 
+            <span class="cursiva">Que te conozcan a ti</span>, Paraná, Entre Ríos
+            <span class="cursiva">Dirección editorial del libro Que te conozcan a ti, de Luis Tabor. ISBN 978-987-817-778-6</span> 
+            
+            <span class="fecha">2021-2019</span>
+            <span class="negrita">Redactor</span> 
+            Revista Conexión 2.0 - ACES, Buenos Aires
+            <span class="cursiva">Redactor de artículos y cuentos cortos para la revista Conexión 2.0, publicada por la Asociación Casa Editora Sudamericana</span> 
+        </p>
+    </section>
+
+   <script src="js/funciones.js"></script>
+
+   <!--Barra de pie de página-->
+   <footer>
+        <div class="pie"> 
+            <a title="Instagram" href="https://www.instagram.com/saycheese.nyp"><img class="logo" src="img/logo-ig.png" alt="Instagram de SayCheese Fotos" /></a>
+            <a title="Facebook" href="https://www.facebook.com/saycheese.nyp"><img class="logo" src="img/logo-face.png" alt="Facebook de SayCheese Fotos" /></a>
+            <a title="WhatsApp" href="https://wa.me/c/5493434163258"><img class="logo" src="img/logo-whats.png" alt="WhatsApp de SayCheese Fotos" /></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

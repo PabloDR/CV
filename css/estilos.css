@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+html {
+  min-height: 100%;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  background: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  html{
+    font-size: 8px;
+  }
+}
+
+body {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.superior {
+  width: 75%;
+  display: inline-block;
+}
+
+.textofijo {
+  width: 100%;
+}
+
+.negrita {
+  font-weight: bold;
+  display: inline;
+}
+
+.cursiva {
+  font-style: italic;
+  display: inline;
+}
+
+.fecha {
+  font-style: italic;
+  display: inline;
+  font-weight:bolder;
+  font-size: 130%;
+  margin-left: 20px;
+}
+
+.nombre {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align:center;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.correo {
+  text-align:center;  
+}
+
+.fijo {
+  
+  display: flex;
+  margin: 0px;
+  margin-top: 5px;
+  text-align:center;
+  font-size: 130%;
+  white-space: pre-line;
+}
+
+.info p {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -30px;
+
+  text-align:left;
+  font-size: 130%;
+  white-space: pre-line;
+  line-height: 2.5;
+}
+
+.info {
+  border: 10px;
+  text-overflow: ellipsis;
+}
+
+.barra-lateral {
+    float: left;
+    position: relative;
+    background-color: rgb(107, 103, 103);
+    width: 25%;
+    color: #ffffff;  
+    height: 100%;
+}
+
+#item {
+  float: left;
+  width: 75%;
+}
+
+#foto {
+  width: 43%;
+  margin-top: 20px;
+}
+
+.nav {
+  position: relative;
+  margin: 0 10%;
+  text-align: left;
+}
+
+.nav p {
+  position: relative;
+  margin: 2.2em 0;
+  line-height: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all ease-out 200ms;
+}
+   
+.p-activo {
+  font-weight: bold;
+  text-align: right;
+  color: rgb(255, 255, 255);
+}
+
+.p-normal {
+  color: rgb(190, 190, 190);
+  font-weight:normal;
+  text-align: left;
+}
+
+.nav p:hover {
+  color: rgb(255, 255, 255);
+  cursor:pointer; 
+  font-weight: bold;
+}
+
+.nav p::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #000000, #ffffff)
+} 
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(107, 103, 103);
+  text-align: center;
+}
+
+.logo {
+  width: 3%;
+}
+
+.pie {
+  margin: 10px;
+}
