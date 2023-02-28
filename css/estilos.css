@@ -1,3 +1,4 @@
+/*Generales*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
 * {
@@ -7,7 +8,6 @@
   text-decoration: none;
   list-style-type: none;
 }
-
 
 html {
   height: 100%;
@@ -23,25 +23,109 @@ body {
   margin: 0;
   margin-bottom: 50px;
 }
+/*Fin generales*/
 
-.superior {
+
+/*Barra lateral*/
+.barra-lateral {
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: rgb(107, 103, 103);
+  width: 25%;
+  color: #ffffff;  
+}
+
+#foto {
+  width: 43%;
+  margin-top: 20px;
+}
+
+.nav {
+  position: relative;
+  margin: 0 10%;
+  text-align: left;
+}
+
+.nav li {
+  margin: 2.2em 0;
+  position: relative;
+  
+}
+
+.nav li a {
+  position: relative;
+  line-height: 2.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  transition: all ease-out 200ms;
+  display: block;
+  
+}
+
+.aw-icon {
+  font-size: 120%;
+}
+
+
+
+.a-activo {
+  font-weight: bold;
+  text-align: right;
+  color: rgb(255, 255, 255);
+}
+
+.a-normal {
+  color: rgb(190, 190, 190);
+  font-weight:normal;
+  text-align: left;
+}
+
+.nav li a:hover {
+  color: rgb(255, 255, 255);
+  cursor:pointer; 
+  font-weight: bold;
+}
+
+.nav li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.1em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #000000, #ffffff)
+} 
+/*Fin barra lateral*/
+
+/*Espacio de información*/
+.negrita {
+  font-weight: bold;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.superior-nombre {
   width: 75%;
   display: inline-block;
+  margin-bottom: 10px;
+}
+
+.superior-texto {
+  width: 75%;
+  display: inline-block;
+  margin-top: 10px;
+
 }
 
 .textofijo {
   width: 100%;
 }
 
-.negrita {
-  font-weight: bold;
-  display: inline;
-}
-
-.cursiva {
-  font-style: italic;
-  display: inline;
-}
 
 .fecha {
   font-style: italic;
@@ -60,120 +144,71 @@ body {
 }
 
 .correo {
-  text-align:center;  
+  text-align:center;
+  text-decoration: underline;  
+}
+
+.amarillo {
+  color: yellow;
 }
 
 .fijo {
-  
   display: flex;
   margin: 0px;
-  margin-top: 5px;
   text-align:center;
-  font-size: 130%;
+  font-size: 110%;
   white-space: pre-line;
+  line-height: 1;
 }
 
 .info p {
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: -30px;
-  
   text-align:left;
   font-size: 130%;
   white-space: pre-line;
-  line-height: 2.5;
+  line-height: 2;
+  text-overflow: ellipsis;
 }
 
 .info {
   border: 10px;
   text-overflow: ellipsis;
 }
+/*Fin barra de información*/
 
-.barra-lateral {
-  height: 100%;
-  float: left;
-  position: relative;
-  background-color: rgb(107, 103, 103);
-  width: 25%;
-  color: #ffffff;  
-}
 
-#item {
-  float: left;
-  width: 75%;
-}
-
-#foto {
-  width: 43%;
-  margin-top: 20px;
-}
-
-.nav {
-  position: relative;
-  margin: 0 10%;
-  text-align: left;
-}
-
-.nav p {
-  position: relative;
-  margin: 2.2em 0;
-  line-height: 2.2em;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  transition: all ease-out 200ms;
-}
-
-.p-activo {
-  font-weight: bold;
-  text-align: right;
-  color: rgb(255, 255, 255);
-}
-
-.p-normal {
-  color: rgb(190, 190, 190);
-  font-weight:normal;
-  text-align: left;
-}
-
-.nav p:hover {
-  color: rgb(255, 255, 255);
-  cursor:pointer; 
-  font-weight: bold;
-}
-
-.nav p::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 0.2em;
-  background: black;
-  left: 0;
-  bottom: 0;
-  background-image: linear-gradient(to right, #000000, #ffffff)
-} 
-
+/*Barra inferior*/
 footer {
   width: 100%;
   position: absolute;
   bottom: 0;
   background-color: rgb(107, 103, 103);
   text-align: center;
-  padding: 10px;
+  padding: 1%;
 }
+
 footer .pie {
-  height: fit-content;
-  display: flex;
+  width: 100%;
+  display: flexbox;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+}
+
+#facebook-logo {
+  margin: 1%;
 }
 
 footer .pie .logo {
-  width: 50px;
+  width: 3%;
 }
+/*Fin barra inferior*/
 
+/*Media querys*/
 @media (max-width: 800px) {
   html{
     font-size: 8px;
   }
 }
+
+/* Fin Media querys*/

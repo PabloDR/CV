@@ -6,15 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum Vitae del Editor Pablo Ramos"/>
     <title>Currículum de Pablo Ramos</title>
 <!--Esta es para incluir la hoja de estilo-->
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-<!--Esta es para incluir un ícono-->     
+<!--Esta es para incluir un ícono de la página-->     
     <link rel="shortcut icon" href="img/logo1.png">
+<!--Esta es para incluir FontAwesome-->     
+    <script src="https://kit.fontawesome.com/f853e8de87.js" crossorigin="anonymous"></script>
 
 </head>
 <body >
-<!--Agregnado algo para que haya un cambio-->
     <!--Menú lateral-->
     <section class="barra-lateral">
 
@@ -22,26 +24,28 @@
             <img id="foto" src="img/Pablo CV.png" alt="Foto de Pablo Ramos" />
         </div>
 
-        <div class="nav">
-            <p id="item1" class="item p-activo">detalles personales</p>
-            <p id="item2" class="item p-normal">habilidades</p>
-            <p id="item3" class="item p-normal">educación</p>
-            <p id="item4" class="item p-normal">experiencia laboral</p>
-            <p id="item5" class="item p-normal">cursos</p>
-            <p id="item6" class="item p-normal">pasantía</p>
-            <p id="item7" class="item p-normal">actividades extras</p>
-        </div>
+        <nav class="nav">
+            <ul>
+                <li><a id="item1" class="item a-activo" href=#><i class="fa-solid fa-circle-info aw-icon"></i>  detalles personales</a></li>
+                <li><a id="item2" class="item a-normal" href=#><i class="fa-solid fa-star aw-icon"></i>  habilidades</a></li>
+                <li><a id="item3" class="item a-normal" href=#><i class="fa-solid fa-graduation-cap aw-icon"></i>  educación</a></li>
+                <li><a id="item4" class="item a-normal" href=#><i class="fa-solid fa-person-digging aw-icon"></i>  experiencia laboral</a></li>
+                <li><a id="item5" class="item a-normal" href=#><i class="fa-solid fa-book aw-icon"></i>  cursos</a></li>
+                <li><a id="item6" class="item a-normal" href=#><i class="fa-solid fa-briefcase aw-icon"></i>  pasantía</a></li>
+                <li><a id="item7" class="item a-normal" href=#><i class="fa-solid fa-globe aw-icon"></i>  actividades extras</a></li>
+            </ul>
+        </nav>
     </section>
     
     <!--Sección con información personal-->
-    <section class="superior">
+    <section class="superior-nombre">
         <p class="nombre">Pablo Daniel Ramos</p>
         <div style="text-align: center;">
             <a class="correo" href="mailto:pdramos@gmail.com?Subject=Contacto">PDRamos@gmail.com</a></p>
         </div>
     </section>
 
-    <section class="superior">
+    <section class="superior-texto">
         <p class="fijo">
     <span class="textofijo">Me gradué de <span class="negrita"> Técnico en Producción Editorial </span> en la Universidad Nacional de Entre Ríos y soy <br> <span class="negrita">
         Fotógrafo Profesional</span> matriculado en la Asociación de Fotógrafos Profesionales de Entre Ríos. <br>
@@ -63,10 +67,10 @@
 
     <section class="info" id ="habilidades" style="display:none;">
         <p>
-            Responsable <span class="negrita">100%</span>
-            Servicial <span class="negrita">90%</span>
-            Liderazgo <span class="negrita">90%</span>
-            Comunicativo <span class="negrita">80%</span>  
+            Responsable <span class="amarillo"><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i></span>
+            Servicial <span class="amarillo"><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i></span>
+            Liderazgo <span class="amarillo"><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i></span>
+            Comunicativo <span class="amarillo"><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i><i class="fa-solid fa-star aw-icon"></i></span>  
         </p>
     </section>
 
@@ -139,7 +143,7 @@
    <footer>
         <div class="pie"> 
             <a title="Instagram" href="https://www.instagram.com/saycheese.nyp"><img class="logo" src="img/logo-ig.png" alt="Instagram de SayCheese Fotos" /></a>
-            <a title="Facebook" href="https://www.facebook.com/saycheese.nyp"><img class="logo" src="img/logo-face.png" alt="Facebook de SayCheese Fotos" /></a>
+            <a id="facebook-logo" title="Facebook" href="https://www.facebook.com/saycheese.nyp"><img class="logo" src="img/logo-face.png" alt="Facebook de SayCheese Fotos" /></a>
             <a title="WhatsApp" href="https://wa.me/c/5493434163258"><img class="logo" src="img/logo-whats.png" alt="WhatsApp de SayCheese Fotos" /></a>
         </div>
     </footer>

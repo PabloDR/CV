@@ -36,13 +36,13 @@ function mostrar(seccion,item) {
     
     var  items = document.getElementsByClassName('item');
     for (var i = 0; i < items.length; i++) {
-        items[i].classList.remove('p-activo');
-        items[i].classList.add('p-normal');
+        items[i].classList.remove('a-activo');
+        items[i].classList.add('a-normal');
     }
 
         document.getElementById(seccion).style.display = "flex";
-        document.getElementById(item).classList.remove('p-normal');
-        document.getElementById(item).classList.add('p-activo');
+        document.getElementById(item).classList.remove('a-normal');
+        document.getElementById(item).classList.add('a-activo');
        
 };
 
